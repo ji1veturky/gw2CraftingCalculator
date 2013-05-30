@@ -1,33 +1,65 @@
-/*    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.guildwars2.com/v1/recipes.json", false);
-    xhr.send();
-    
-   console.log(xhr.recipes);*/
-   
-   /* var jqxhr = $.getJSON("https://api.guildwars2.com/v1/wvw/objective_names.json",function(){
-    console.log("success");
-})
+//jQuery.getJSON( url [, data ] [, success(data, textStatus, jqXHR) ] )
 
-.done(function() { console.log( "second success" ); })
-.fail(function() { console.log( "error" ); })
-.always(function() { console.log( "complete" ); });
- 
-jqxhr.complete(function() { console.log( "second complete" ); }); */
+$(document).ready(function(){
+	//link request
+	//https://api.guildwars2.com/v1/map_names.json?id=873
+	//var itemURI = "https://api.guildwars2.com/v1/items.json";
 
-var GW2API = "https://api.guildwars2.com/v1/event_names.json";
-var maps = [];
-var numEvent=[];
+	//Example - Works!
+	//var mapURI = "https://api.guildwars2.com/v1/map_names.json";
+	// $.getJSON(mapURI, function(data){
+	// 	$.each(data, function(map_name){
+	// 		$("#content").append('<div>' + this.name + '</div>');
+	// 	});
+
+	// });
+
+	// var gw2ItemsURI = "https://api.guildwars2.com/v1/items.json";
+	// $.getJSON(gw2ItemsURI, function(data){
+	// 	//get each data
+	// 	$.each(data, function(item_num){
+	// 		//put each item number into itemNum variable
+	// 		var itemNum = this.items;
+	// 		//	
+	// 		var itemDetailURI = "https://api.guildwars2.com/v1/item_details.json";
+	// 		$.getJSON(itemDetailURI, function(data){
+	// 			$.each(data, function(item_name){
+	// 				$("#content").append(+ "?item_id")
+	// 			})
+	// 		})
 
 
-	// function majorEvnt(){
-		// $.getJSON(GW2API, function(data){
-			// $.each(data['events'], function(key,val) {
-				// console.log(maps[val['event_id']]);
-			// })
-		// });
-	// } 
+	var itemsURI = "https://api.guildwars2.com/v1/items.json";
+	$.getJSON(itemsURI, function(data){
+		//go get each item id from itemsURI
+		$.each(data, function(item_id){
+			var itemsId = data.items;
+			var itemId = [];
 
-//setup document ready for jquery
-$(function(){
+			itemId.push(itemsId);
+			$.each(itemId, function(index,value){
+				$('#items').append("<option>" + value + "</option>");
+			})
+			
+		});
+	});
+					
+
+			
+
+
+
+			// var itemDetailURI = "https://api.guildwars2.com/v1/item_details.json?item_id=" + itemID ;
+			// $.getJSON(itemDetailURI, function(data){
+			// 	$.each(data, function(item_details){
+			// 		$("#content").append('<div>'+ data.name +'</div>');
+			// 	});	
+			// });
+
+
+		//Example link
+		//https://api.guildwars2.com/v1/item_details.json?item_id=12546
+
+
 
 })

@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"item",
+				"itemID"
+			],
+			[
+				"ite",
+				"itemID"
+			],
+			[
+				"js",
+				"getJSON"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ge",
+				"gw2ItemsURI"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"j",
+				"jqXHR"
+			],
+			[
+				"get",
+				"getJSON"
+			],
+			[
 				"map",
 				"map_names"
 			]
@@ -12,18 +44,18 @@
 	"buffers":
 	[
 		{
-			"file": "gw2apiTest.js",
+			"file": "apiTest.html",
 			"settings":
 			{
-				"buffer_size": 875,
+				"buffer_size": 260,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "apiTest.html",
+			"file": "gw2apiTest.js",
 			"settings":
 			{
-				"buffer_size": 329,
+				"buffer_size": 1712,
 				"line_ending": "Unix"
 			}
 		}
@@ -39,7 +71,7 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 139.0
 	},
 	"distraction_free":
 	{
@@ -52,11 +84,15 @@
 	},
 	"file_history":
 	[
-		"/home/jeddah/Workspace/gw2CraftingCalculator/gw2apiTest.js"
+		"/home/jeddah/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/jeddah/Workspace/GW2ActiveEvents/index.html",
+		"/home/jeddah/Workspace/GW2ActiveEvents/Scripts/scripts.js",
+		"/home/jeddah/Workspace/gw2CraftingCalculator/gw2apiTest.js",
+		"/home/jeddah/Workspace/GW2ActiveEvents/Scripts/group_events.js"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -70,6 +106,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"content",
+			"Loadtable"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -92,45 +130,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "gw2apiTest.js",
-					"settings":
-					{
-						"buffer_size": 875,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								869,
-								823
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 510.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "apiTest.html",
 					"settings":
 					{
-						"buffer_size": 329,
+						"buffer_size": 260,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								257,
-								257
+								115,
+								115
 							]
 						],
 						"settings":
@@ -139,6 +150,40 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "gw2apiTest.js",
+					"settings":
+					{
+						"buffer_size": 1712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1311,
+								1311
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 181.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -163,11 +208,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.296100731113,
 			1.0
 		],
 		"rows":
@@ -201,7 +253,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true
 }
